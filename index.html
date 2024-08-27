@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo de ALURA" class="logo"> 
+    </header>
+       <div class="container">
+        <div class="encriptado_lado_izquierdo">
+            <textarea class="texto" id="texto" rows="12" placeholder="Introduce el texto aquí..."></textarea>
+            <p class="terminos"><img class="icono-info" src="assets/icono.png"></i> ¡Solo letras minúsculas sin acentos y sin numeros!</p>
+            <div class="boton">
+                <button class="Encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="Desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="desencriptado_lado_derecho">
+            <img class="mensaje-encriptado" src="assets/observador.png" alt="persona observando" id="observador"/>
+            <h2 id="titulo-mensaje"> Ningún mensaje fue encontrado </h2>
+            <textarea id="mensaje" rows="10" readonly>El resultado aparecera aqui...</textarea>
+            <div class="boton_2"><button class="boton_copiar" onclick="copiar()">Copiar</button>
+            <button class="boton_limpiar" onclick="limpiar()">Limpiar</button>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <p>ING.Wilmar Encisar Barragan Baracaldo - Alura-LATAM © 2024 </p>
+        <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes</h2>
+                    <a class="presentacion__enlaces__link" href="https://github.com/wilmar-barragan">
+                        <img src="./assets/github.png">
+                        
+                    </a>
+                    <a class="presentacion__enlaces__link" href="https://www.linkedin.com/in/wilmar-barragan/">
+                        <img src="./assets/linkedin.png">
+                        
+                    </a>
+    </footer>
+    <script src="scripts.js" ></script>
+</body>
+</html>
